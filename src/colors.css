@@ -1,0 +1,19 @@
+/* :root {
+    --bg-dark: #ab5d37;
+    --bg-light: #cc794f;
+    --text-light: #e8eece;
+    --text-dark: #e8eece;
+    --contrast: #a33604;
+    --bg-extra-light: #e38e64;
+  
+  } */
+
+  :root {
+    --bg-dark: #bbb;
+    --bg-light: #fff;
+    --text-light: #555;
+    --text-dark: #555;
+    --contrast: #a33604;
+    --bg-extra-light: #ddd;
+  
+  }
