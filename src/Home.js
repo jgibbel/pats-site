@@ -1,6 +1,9 @@
 import React from 'react';
 import './index.css';
 
+import uc from '../images/uc-main.png';
+import ucKids from '../images/uc-kids.png';
+
 export default class Home extends React.Component {
 
   state = {
@@ -43,8 +46,8 @@ render() {
               <section class="card-container">
                   {cards}
               </section> */}
-          <img className="uc" src="../images/uc-main.png" />
-          <img id="pot" className="kids" src="../images/uc-kids.png" />
+          <img className="uc" src={uc} />
+          <img id="pot" className="kids" src={ucKids} />
           </div>
 
       )
