@@ -24,7 +24,7 @@ function FAQ() {
 
   return (
     <div className="FAQ" class="faq-center-div">
-      <div className="goodie-box">
+      {/* <div className="goodie-box">
         <div className="goodie-div">
           <div className="icon"></div>
           <p>Bookmarks</p>
@@ -33,7 +33,7 @@ function FAQ() {
           <p>Coloring Pages</p>
           </div>
        
-      </div>
+      </div> */}
       
         {questions.map((arr, idx) => {return(
           <div className="q">

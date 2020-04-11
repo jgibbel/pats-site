@@ -10,34 +10,54 @@ import {
 class Books extends React.Component {
 
     state = {
-        all: 'selected',
-        picture: "",
-        board: "",
-        middle: "",
-        nonFic: "",
-        filter: 'all'
+        selection: "on",
+        special: "off",
+        filter: "all"
         
     }
 
     handleSelect(type) {
         this.setState(
-            {all: '',
-            picture: "",
-            board: "",
-            middle: "",
-            nonFic: "",}, () => {
+            {selection: "off",
+            }, () => {
                 this.setState({
-                    [type]: "selected",
                     filter: type
                 })
             }
         )
     }
 
+    handleSelectSpecial(type) {
+      this.setState(
+          {selection: "off",
+          special: "on"
+          }, () => {
+              this.setState({
+                  filter: type
+              })
+          }
+      )
+  }
+
+    handleReturn() {
+      this.setState(
+        {selection: "on",
+        filter: "all"}
+    )
+    }
+
+    handleReturnSpecial() {
+      this.setState(
+        {selection: "on",
+        special: "off",
+        filter: "all"}
+    )
+    }
+
   render(){
       let BooksFiltered 
       const Books = BookData
-      if (this.state.filter === 'all') {
+      if (this.state.filter === 'alpha' || this.state.filter === 'chrono') {
           BooksFiltered = Books
       } else {
         BooksFiltered = Books.filter((book) => book.category === this.state.filter)
@@ -46,29 +66,116 @@ class Books extends React.Component {
 
     return (
         <div>
-
+          {(this.state.selection === "on") ? 
+          <>
             <div className="book-select">
-                <div onClick={()=>this.handleSelect('all')} className={"book-button " + this.state.all}>All</div> 
-                <div onClick={()=>this.handleSelect('picture')} className={"book-button " + this.state.picture}>Picture</div> 
-                <div onClick={()=>this.handleSelect('board')} className={"book-button " + this.state.board}>Compilation</div>  
-                <div onClick={()=>this.handleSelect('middle')} className={"book-button " + this.state.middle}>Middle Grade</div>  
-                <div onClick={()=>this.handleSelect('nonFic')} className={"book-button " + this.state.nonFic}>Non-fiction</div>      
+                <div onClick={()=>this.handleSelectSpecial('alpha')} className={"book-button"}>All Books A-Z</div> 
+                <div onClick={()=>this.handleSelectSpecial('chrono')} className={"book-button"}>All Books by Year</div> 
+                    
             </div>
 
-
-
-    <div className="Books" class="books-center-div books-wrapper">
-        {BooksFiltered.sort((a, b) => (a.year < b.year) ? 1 : -1).map((bookDetail, index) => {
-          return(
-            <div className="books-cover-container">
-            <Link to={"/" + bookDetail.url}>
-              <img className="books-book-image" src={bookDetail.coverImage} alt={bookDetail.title}></img>
-              <h4 className="books-title">{bookDetail.title}</h4>
-              </Link>
+            <div className="books-center-div category-select">
+            <div onClick={()=>this.handleSelect('picture')} className="books-cover-container">
+                      <div>
+                      <div className="books-book-image blue"></div>
+                      <h4 className="books-title">Picture Books</h4>
+                      </div>
             </div>
-          )
-        })}
-    </div>
+            <div onClick={()=>this.handleSelect('middle')} className="books-cover-container">
+                      <div>
+                      <div className="books-book-image blue"></div>
+                      <h4 className="books-title">Middle Grade</h4>
+                      </div>
+            </div>
+            <div onClick={()=>this.handleSelect('compilation')} className="books-cover-container">
+                      <div>
+                      <div className="books-book-image blue"></div>
+                      <h4 className="books-title">Compilations</h4>
+                      </div>
+            </div>
+            <div onClick={()=>this.handleSelect('board')} className="books-cover-container">
+                      <div>
+                      <div className="books-book-image blue"></div>
+                      <h4 className="books-title">Board Books</h4>
+                      </div>
+            </div>
+            <div onClick={()=>this.handleSelect('nonFic')} className="books-cover-container">
+                      <div>
+                      <div className="books-book-image blue"></div>
+                      <h4 className="books-title">Nonfiction</h4>
+                      </div>
+            </div>
+            <div onClick={()=>this.handleSelect('educational')} className="books-cover-container">
+                      <div>
+                      <div className="books-book-image blue"></div>
+                      <h4 className="books-title">Educational</h4>
+                      </div>
+            </div>   
+        </div>
+        </>
+            : null}
+        {(this.state.selection === "off" && this.state.special === "off") ?
+            <div  className="Books" class="books-center-div books-wrapper">
+              <div onClick={()=>this.handleReturn()} className="books-cover-container">
+                      <div>
+                      <div className="books-book-image blue"></div>
+                      <h4 className="books-title">Return to Selection</h4>
+                      </div>
+              </div>
+
+                {BooksFiltered.sort((a, b) => (a.year < b.year) ? 1 : -1).map((bookDetail, index) => {
+                  return(
+                    <div className="books-cover-container">
+                    <Link to={"/" + bookDetail.url}>
+                      <img className="books-book-image" src={bookDetail.coverImage} alt={bookDetail.title}></img>
+                      <h4 className="books-title">{bookDetail.title}</h4>
+                      </Link>
+                    </div>
+                  )
+                })}
+            </div> : null}
+
+            {(this.state.selection === "off" && this.state.special === "on") ?
+            
+            <div  className="books-center-div">
+              <div onClick={()=>this.handleReturnSpecial()} className="horiz-tile">
+                      <div className="square blue"></div>
+                      <h4 className="h-title">Return to Selection</h4> 
+              </div>
+                
+              {(this.state.filter === 'chrono') ?
+                <>
+                {BooksFiltered.sort((a, b) => (a.year < b.year) ? 1 : -1).map((bookDetail, index) => {
+                  return(
+                    <Link to={"/" + bookDetail.url}>
+                    <div className="horiz-tile">
+                    
+                      <img className="square" src={bookDetail.coverImage} alt={bookDetail.title}></img>
+                      <h4 className="h-title">{bookDetail.title}</h4>
+                
+                    </div>
+                    </Link>
+                  )
+                })} </> : null }
+
+              {(this.state.filter === 'alpha') ?
+                <>
+              {BooksFiltered.sort((a, b) => (a.title < b.title) ? -1 : 1).map((bookDetail, index) => {
+                  return(
+                    <Link to={"/" + bookDetail.url}>
+                    <div className="horiz-tile">
+                    
+                      <img className="square" src={bookDetail.coverImage} alt={bookDetail.title}></img>
+                      <h4 className="h-title">{bookDetail.title}</h4>
+                     
+                    </div>
+                    </Link>
+                  )
+                })} </> : null }
+
+            </div> : null}
+
+            
 
     </div>
 

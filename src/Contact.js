@@ -4,9 +4,9 @@ import './index.css';
 function Contact() {
   return (
         <div className="contact">
-            <p>Email <a href="mailto:write2me@patcummings.com">write2me@patcummings.com</a></p>
-            <p>Instagram <a href="mailto:write2me@patcummings.com">link</a></p>
-            <p>Facebook <a href="mailto:write2me@patcummings.com">link</a></p>
+            <p><a href="mailto:write2me@patcummings.com">write2me@patcummings.com</a></p>
+            {/* <p>Instagram <a href="mailto:write2me@patcummings.com">link</a></p>
+            <p>Facebook <a href="mailto:write2me@patcummings.com">link</a></p> */}
 
         </div>
   );

@@ -37,13 +37,14 @@ render() {
   return (
           <div className="Archive">
 
-              {isOpen && (<><div className="image-popup" onClick={this.clickToClose}></div>
+              {/* {isOpen && (<><div className="image-popup" onClick={this.clickToClose}></div>
               <img className="highlight-image" src={images[imageIdx]} alt={'willie'} onClick={this.clickToClose} /></>)}
 
               <section class="card-container">
                   {cards}
-              </section>
-          
+              </section> */}
+          <img className="uc" src="../images/uc-main.png" />
+          <img id="pot" className="kids" src="../images/uc-kids.png" />
           </div>
 
       )
