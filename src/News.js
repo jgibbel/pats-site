@@ -11,7 +11,7 @@ class News extends React.Component {
   }
 
   componentDidMount() {
-    fetch("http://news.patcummings.com/wp-json/wp/v2/posts")
+    fetch("https://news.patcummings.com/wp-json/wp/v2/posts")
     .then(r => r.json())
     .then(r => {
       // debugger;
