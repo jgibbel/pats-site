@@ -35,6 +35,9 @@ function App() {
         <Route exact path="/">
           <Home />
         </Route>
+        <Route exact path="/pats-site">
+          <Home />
+        </Route>
         <Route path="/bio">
           <Bio />
         </Route>
