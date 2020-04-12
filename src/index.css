@@ -23,7 +23,7 @@ code {
 }
 
 .kids {
-  width: 60vw;
+  width: 35vw;
 }
 
 .Archive {
@@ -35,14 +35,15 @@ code {
 background: linear-gradient(0deg, rgba(66,88,166,1) 0%, rgba(12,54,113,1) 100%);
 }
 #pot {
-  bottom: 15%;
+  bottom: 10%;
+  left: -20px;
   position: absolute;
-  animation: ease-in infinite;
+  /* animation: ease-in infinite;
   animation-name: run;
   animation-duration: 10s;
   -webkit-animation: ease-in infinite;
   -webkit-animation-name: run;
-  -webkit-animation-duration: 10s;
+  -webkit-animation-duration: 10s; */
 }
 
 @keyframes run {
@@ -201,7 +202,23 @@ a:active {
   }
   
 @media (max-width: 600px) {
-
+  .bottom-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 0 0 10px 0;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100vw;
+  }
+  
+  .navLink {
+    /* background-color: var(--bg-dark); */
+    width: 20vw;
+    text-align: left;
+    padding-left: 13vw;
+    padding-bottom: 20px;
+  }
   }
   
 
