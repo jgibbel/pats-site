@@ -70,8 +70,8 @@ class Books extends React.Component {
           {(this.state.selection === "on") ? 
           <>
             <div className="book-select">
-                <div onClick={()=>this.handleSelectSpecial('alpha')} className={"book-button"}>All Books A-Z</div> 
-                <div onClick={()=>this.handleSelectSpecial('chrono')} className={"book-button"}>All Books by Year</div> 
+                <div onClick={()=>this.handleSelectSpecial('alpha')} className={"book-button"}>Books A-Z</div> 
+                <div onClick={()=>this.handleSelectSpecial('chrono')} className={"book-button"}>Books Chronologically</div> 
                     
             </div>
 
