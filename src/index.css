@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Quattrocento Sans', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: var(--bg-light);
@@ -564,13 +564,14 @@ a:active {
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin: 50px;
+  margin: 25px;
 }
 
 
 
 .h-title {
   padding-left: 25px;
+  font-size: 20px;
 }
 
 
@@ -604,6 +605,7 @@ a:active {
   height: 70px;
   width: 200px;
   margin: 10px 0;
+  font-size: 20px;
 }
 
 .category-select {
