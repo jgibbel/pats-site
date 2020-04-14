@@ -567,9 +567,7 @@ a:active {
   margin: 50px;
 }
 
-.horiz-tile:hover {
-  cursor: pointer;
-}
+
 
 .h-title {
   padding-left: 25px;
@@ -592,7 +590,7 @@ a:active {
         justify-content: center; 
 }
 
-.books-cover-container:hover {
+.cursor:hover {
   cursor: pointer;
 }
 

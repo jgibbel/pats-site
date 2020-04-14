@@ -76,37 +76,37 @@ class Books extends React.Component {
             </div>
 
             <div className="books-center-div category-select">
-            <div onClick={()=>this.handleSelect('picture')} className="books-cover-container">
+            <div onClick={()=>this.handleSelect('picture')} className="books-cover-container cursor">
                       <div>
                       <img className="books-book-image" src="https://jgibbel.github.io/pats-site/images/00picBook.jpg" alt="Picture Books"></img>
                       <h4 className="books-title">Picture Books</h4>
                       </div>
             </div>
-            <div onClick={()=>this.handleSelect('middle')} className="books-cover-container">
+            <div onClick={()=>this.handleSelect('middle')} className="books-cover-container cursor">
                       <div>
                       <img className="books-book-image" src="https://jgibbel.github.io/pats-site/images/00middleGrade.jpg" alt="Picture Books"></img>
                       <h4 className="books-title">Middle Grade</h4>
                       </div>
             </div>
-            <div onClick={()=>this.handleSelect('compilation')} className="books-cover-container">
+            <div onClick={()=>this.handleSelect('compilation')} className="books-cover-container cursor">
                       <div>
                       <img className="books-book-image" src="https://jgibbel.github.io/pats-site/images/00compilations.jpg" alt="Picture Books"></img>
                       <h4 className="books-title">Compilations</h4>
                       </div>
             </div>
-            <div onClick={()=>this.handleSelect('board')} className="books-cover-container">
+            <div onClick={()=>this.handleSelect('board')} className="books-cover-container cursor">
                       <div>
                       <img className="books-book-image" src="https://jgibbel.github.io/pats-site/images/00boardBook.jpg" alt="Picture Books"></img>
                       <h4 className="books-title">Board Books</h4>
                       </div>
             </div>
-            <div onClick={()=>this.handleSelect('nonFic')} className="books-cover-container">
+            <div onClick={()=>this.handleSelect('nonfiction')} className="books-cover-container cursor">
                       <div>
                       <img className="books-book-image" src="https://jgibbel.github.io/pats-site/images/00nonFic.jpg" alt="Picture Books"></img>
                       <h4 className="books-title">Nonfiction</h4>
                       </div>
             </div>
-            <div onClick={()=>this.handleSelect('educational')} className="books-cover-container">
+            <div onClick={()=>this.handleSelect('educational')} className="books-cover-container cursor">
                       <div>
                       <img className="books-book-image" src="https://jgibbel.github.io/pats-site/images/00educational.jpg" alt="Picture Books"></img>
                       <h4 className="books-title">Educational</h4>
@@ -117,7 +117,7 @@ class Books extends React.Component {
             : null}
         {(this.state.selection === "off" && this.state.special === "off") ?
             <div  className="Books" class="books-center-div books-wrapper">
-              <div onClick={()=>this.handleReturn()} className="books-cover-container">
+              <div onClick={()=>this.handleReturn()} className="books-cover-container cursor">
                       <div>
                       <img className="books-book-image" src="https://jgibbel.github.io/pats-site/images/00compilations.jpg"></img>
                       <h4 className="books-title">Return to Selection</h4>
@@ -126,12 +126,24 @@ class Books extends React.Component {
 
                 {BooksFiltered.sort((a, b) => (a.year < b.year) ? 1 : -1).map((bookDetail, index) => {
                   return(
+                    <>
+                    {(bookDetail.url === "none") ? 
                     <div className="books-cover-container">
-                    <Link to={"/" + bookDetail.url}>
+                    <div>
                       <img className="books-book-image" src={bookDetail.coverImage} alt={bookDetail.title}></img>
                       <h4 className="books-title">{bookDetail.title}</h4>
-                      </Link>
+                      </div>
                     </div>
+                  : 
+                    
+                  <div className="books-cover-container cursor">
+                  <Link to={"/" + bookDetail.url}>
+                    <img className="books-book-image" src={bookDetail.coverImage} alt={bookDetail.title}></img>
+                    <h4 className="books-title">{bookDetail.title}</h4>
+                    </Link>
+                  </div>}
+                    </>
+                    
                   )
                 })}
             </div> : null}
@@ -139,7 +151,7 @@ class Books extends React.Component {
             {(this.state.selection === "off" && this.state.special === "on") ?
             
             <div  className="books-center-div">
-              <div onClick={()=>this.handleReturnSpecial()} className="horiz-tile">
+              <div onClick={()=>this.handleReturnSpecial()} className="horiz-tile cursor">
                       <img className="square" src="https://jgibbel.github.io/pats-site/images/00compilations.jpg"></img>
                       <h4 className="h-title">Return to Selection</h4> 
               </div>
@@ -148,29 +160,51 @@ class Books extends React.Component {
                 <>
                 {BooksFiltered.sort((a, b) => (a.year < b.year) ? 1 : -1).map((bookDetail, index) => {
                   return(
+                    <>
+                    {(bookDetail.url === "none") ? <div className="horiz-tile">
+                    
+                    <img className="square" src={bookDetail.coverImage} alt={bookDetail.title}></img>
+                    <h4 className="h-title">{bookDetail.title}    ({bookDetail.year})</h4>
+              
+                  </div>
+                  
+                  : 
+                    
                     <Link to={"/" + bookDetail.url}>
-                    <div className="horiz-tile">
+                    <div className="horiz-tile cursor">
                     
                       <img className="square" src={bookDetail.coverImage} alt={bookDetail.title}></img>
-                      <h4 className="h-title">{bookDetail.title}</h4>
+                      <h4 className="h-title">{bookDetail.title}    ({bookDetail.year})</h4>
                 
                     </div>
-                    </Link>
-                  )
+                  </Link> }
+                    </>
+                    )
                 })} </> : null }
 
               {(this.state.filter === 'alpha') ?
                 <>
               {BooksFiltered.sort((a, b) => (a.title < b.title) ? -1 : 1).map((bookDetail, index) => {
                   return(
+                    <>
+                    {(bookDetail.url === 'none') ? <div className="horiz-tile">
+                    
+                    <img className="square" src={bookDetail.coverImage} alt={bookDetail.title}></img>
+                    <h4 className="h-title">{bookDetail.title}</h4>
+              
+                  </div>
+                  
+                  : 
+                    
                     <Link to={"/" + bookDetail.url}>
-                    <div className="horiz-tile">
+                    <div className="horiz-tile cursor">
                     
                       <img className="square" src={bookDetail.coverImage} alt={bookDetail.title}></img>
                       <h4 className="h-title">{bookDetail.title}</h4>
-                     
+                
                     </div>
-                    </Link>
+                  </Link> }
+                    </>
                   )
                 })} </> : null }
 

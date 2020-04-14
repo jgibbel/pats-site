@@ -47,7 +47,7 @@ render() {
                   {cards}
               </section> */}
           <img className="uc" src="https://jgibbel.github.io/pats-site/images/uc-main.png" />
-          <img id="pot" className="kids" src="https://jgibbel.github.io/pats-site/images/uc-kids.png" />
+          {/* <img id="pot" className="kids" src="https://jgibbel.github.io/pats-site/images/uc-kids.png" /> */}
           </div>
 
       )

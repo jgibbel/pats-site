@@ -13,7 +13,7 @@ function Show() {
     return (
       <>
       {/* <div className="book-back"><img className="show-svg" src={backButton} alt="Previous"/></div> */}
-       
+       {(thisBook.url === "none") ? null :
         <div className="show-page-grid">
 
             <div className="show-title"> <h1>{thisBook.title}</h1></div>
@@ -81,7 +81,7 @@ function Show() {
 
               </div>
         </div>
-              
+        }     
         </>
         );
 }

@@ -6,7 +6,7 @@
         "coverImage": "https://jgibbel.github.io/pats-site/images/HMMB-cover.jpg",
         "description": "Few places are as fascinating as the Metropolitan Museum of Art in New York City. You can weave in and out of rooms filled with dramatic African masks then turn a corner to find knights carrying banners, sitting astride armor-clas horses. Every visit reveals something new. \n One monday, when the museum was closed to the public, I even got to roam around the Egyptian wing on my own. That got me thinking about what it would be like to find yourself alone with all those wonderful treasures. Pretty exciting and just a bit scary, no doubt. And if you read hieroglyphs, keep an eye out for a secret message.",
         "reviews": [{"text": "A lively read-aloud... will make close-up viewers giggle, as will the story's closing twist.", "author": "ALA Booklist"}, {"text": "To liven up his class trip, Harvey Moon brings his pet lizard, Zippy, along to the museum. Whoops. When Ziggy escapes, Harvey's adventures begin. You'll be laughing and wondering what's next as knights, dinosaurs, and even mummies get into the act. Cut loose in a museum setting with a brave boy, a lively lizard, a funny plot and award-winning author and artist Pat Cummings at her entertaining best.", "author": "HarperCollins"}],
-        "images": [{"image": "../images/HMMB-image1.jpg", "caption": "Tuesday began just like any old day. But when his mom suddenly said, 'Remember your class has a field trip today,' A plan popped into Harvey Moon's head." }],
+        "images": [{"image": "https://jgibbel.github.io/pats-site/images/HMMB-image1.jpg", "caption": "Tuesday began just like any old day. But when his mom suddenly said, 'Remember your class has a field trip today,' A plan popped into Harvey Moon's head." }],
         "bookmarks": ["https://jgibbel.github.io/pats-site/images/HMMB-bookmark.jpg"],
         "category": "picture",
         "url": "harvey-moon-museum-boy" 
@@ -74,7 +74,7 @@
         "reviews": [{"text": "The bold colors and endearing characters will appeal to toddlers, who will recognize many familiar objects (ball, bat, crayons) and will soon be repeating words from the catchy rhyming text. You Are My Perfect Baby celebrates an infant's 'twinkling toes,' 'wiggly waist,' and 'tiny ears.' The softly colored illustrations show an African-American child playing with toys, eating cereal, taking a bath, and walking with his mother's assistance. As they read the book aloud, parents will enjoy playing with their own little one's perfect hands and feet, and babies will like the rhythmic, musical quality of the text.", "author": "School Library Journal"}],
         "images": [{"image": "../images/purrrrr-image1.jpg", "caption": "She won't go to Granny's / to the beach or the park / but when I go to bed / she cuddles with me in the dark." }],
         "bookmarks": ["",""],
-        "category": "picture",
+        "category": "board",
         "url": "purrrrr"
 
     },
@@ -163,12 +163,12 @@
         "publisher": "HarperTrophy",
         "year": "1992",
         "author": "Written by Mary Stolz, Illustrated by Pat Cummings",
-        "coverImage": "https://jgibbel.github.io/pats-site/images/gofish-cover.jpg",
+        "coverImage": "https://jgibbel.github.io/pats-site/images/go-fish-cover.jpg",
         "description": "Grandfather and Thomas are a family of two, \"semi-poor\" and dependent on food that they catch of produce themselves, plus their cat, Ringo. They begin the day by fishing for trout, and finish it with a game of cards (Go fish, of course) and a story. The before-you-were-born hurricane, the grandfather as a small boy himself listening to the stories of his own grandfather, the line of ancestors leading back to ancient African cities, the fossils preserved in the limestone of long dried-up seas--all these are the elements of a single summer day.",
         "reviews": [{"text": "With striking artwork and words as mesmerizing as the art, the story about the nature of fear and human nature is wonderful.", "author": "ALA Booklist"}],
         "images": [{"image": "../images/gofish-image1.jpg", "caption": "Thomas dealt. He frowned at his cards. \"Do you have any threes?\" he asked. Grandfather tipped up his beard. He lowered his chin. He leaned forward. He tapped his forehead and scowled and muttered. \"Grandfather\" Thomas said sternly, \"You know if you have threes.\""}],
         "bookmarks": ["",""],
-        "category": "picture",
+        "category": "middle",
         "url": "go-fish"
 
     },
@@ -352,6 +352,397 @@
         "category": "compilation",
         "url": "sunny-day"
 
+    },
+
+
+    
+    {
+        "title":"Chilly Stomach",
+        "publisher": "Harper & Row",
+        "year": "1986",
+        "author": "Written by Jeannette Caines, Illustrated by Pat Cummings",
+        "coverImage": "https://jgibbel.github.io/pats-site/images/chilly-stomach-cover.jpg",
+        "description": "",
+        "reviews": "",
+        "images": "",
+        "bookmarks": "",
+        "category": "picture",
+        "url": "none"
+
+    }, 
+
+    {
+        "title":"The Secret of the Royal Mounds",
+        "publisher": "Coward McCann Geoghegan",
+        "year": "1980",
+        "author": "Written by Cynthia Jameson, Illustrated by Pat Cummings",
+        "coverImage": "https://jgibbel.github.io/pats-site/images/secret-of-royal-mounds-cover.jpg",
+        "description": "",
+        "reviews": "",
+        "images": "",
+        "bookmarks": "",
+        "category": "picture",
+        "url": "none"
+
+    }, 
+
+    {
+        "title":"Beyond Dreamtime",
+        "publisher": "Coward McCann Geoghegan",
+        "year": "1978",
+        "author": "Written by Trudie MacDougall, Illustrated by Pat Cummings",
+        "coverImage": "https://jgibbel.github.io/pats-site/images/beyond-dreamtime-cover.jpg",
+        "description": "",
+        "reviews": "",
+        "images": "",
+        "bookmarks": "",
+        "category": "picture",
+        "url": "none"
+
+    }, 
+
+    {
+        "title":"Good News",
+        "publisher": "Coward McCann Geoghegan",
+        "year": "1977",
+        "author": "Written by Eloise Greenfield, Illustrated by Pat Cummings",
+        "coverImage": "https://jgibbel.github.io/pats-site/images/good-news-cover.jpg",
+        "description": "",
+        "reviews": "",
+        "images": "",
+        "bookmarks": "",
+        "category": "picture",
+        "url": "none"
+
+    }, 
+
+    {
+        "title":"Talking With Artists Vol. 3",
+        "publisher": "Clarion Books",
+        "year": "1999",
+        "author": "Compiled by Pat Cummings",
+        "coverImage": "https://jgibbel.github.io/pats-site/images/twa3-cover.jpg",
+        "description": "Conversations with Peter Catalanotto, Raul Colon, Lisa Desimini, Jane Dyer, Kevin Hawkes, G. Brian Karas, Betsy and Ted Lewin, Keiko Narahashi, Elise Primavera, Anna Rich, Peter Sis, Paul Zelinsky",
+        "reviews": "",
+        "images": "",
+        "bookmarks": "",
+        "category": "nonfiction",
+        "url": "none"
+
+    }, 
+
+
+    {
+        "title":"Talking With Adventurers",
+        "publisher": "National Geographic Books",
+        "year": "1998",
+        "author": "Compiled and edited by Pat Cummings & Linda Cummings, PhD.",
+        "coverImage": "https://jgibbel.github.io/pats-site/images/twad-cover.jpg",
+        "description": "Conversations with Christina Allen, Robert Ballard, Michael Blakey, Ann Bowles, David Doubilet, Jane Goodall, Dereck & Beverly Joubert, Michael Novacek, Johan Reinhard, Rick C. West and Juris Zarins",
+        "reviews": "",
+        "images": "",
+        "bookmarks": "",
+        "category": "nonfiction",
+        "url": "none"
+
+    }, 
+    {
+        "title":"Talking With Artists Vol. 2",
+        "publisher": "Simon & Schuster ",
+        "year": "1995",
+        "author": "Compiled by Pat Cummings",
+        "coverImage": "https://jgibbel.github.io/pats-site/images/twa2-cover.jpg",
+        "description": "Conversations with Thomas B. Allen, Mary Jane Begin, Floyd Cooper, Julie Downing, Denise Fleming, Sheila Hamanaka, Kevin Henkes, William Joyce, Maira Kalman, Deborah Nourse Lattimore, Brian Pinkney, Vera B. Williams and David Wisniewski",
+        "reviews": "",
+        "images": "",
+        "bookmarks": "",
+        "category": "nonfiction",
+        "url": "none"
+
+    }, 
+
+    {
+        "title":"Talking With Artists",
+        "publisher": "Bradbury Press",
+        "year": "1992",
+        "author": "Compiled by Pat Cummings",
+        "coverImage": "https://jgibbel.github.io/pats-site/images/twa1-cover.jpg",
+        "description": "Conversations with Victoria Chess, Pat Cummings, Leo and Diane Dillon, Richard Egielski, Lois Ehlert, Lisa Campbell Ernst, Tom Feelings, Steven Kellogg, Jerry Pinkney, Amy Schwartz, Lane Smith, Chris Van Allsburg and David Wiesner",
+        "reviews": "",
+        "images": "",
+        "bookmarks": "",
+        "category": "nonfiction",
+        "url": "none"
+
+    }, 
+
+    {
+        "title":"We Rise, We Resist, We Raise Our Voices",
+        "publisher": "Just Us Books",
+        "year": "2018",
+        "author": "Written by Wade and Cheryl Willis Hudson, We’ve Got You Written and Illustrated by Pat Cummings",
+        "coverImage": "https://jgibbel.github.io/pats-site/images/we-rise-cover.jpg",
+        "description": "",
+        "reviews": "",
+        "images": "",
+        "bookmarks": "",
+        "category": "compilation",
+        "url": "none"
+
+    }, 
+
+    {
+        "title":"One Last Word",
+        "publisher": "Bloomsbury",
+        "year": "2017",
+        "author": "By Nikki Grimes, David’s Old Soul illustrated by Pat Cummings",
+        "coverImage": "https://jgibbel.github.io/pats-site/images/one-last-word-cover.jpg",
+        "description": "",
+        "reviews": "",
+        "images": "",
+        "bookmarks": "",
+        "category": "compilation",
+        "url": "none"
+
+    }, 
+
+    {
+        "title":"A Toucan Can, Can You?",
+        "publisher": "Adlerman Books",
+        "year": "2016",
+        "author": "Rockhopper illustrated by Pat Cummings",
+        "coverImage": "https://jgibbel.github.io/pats-site/images/toucan-cover.jpg",
+        "description": "",
+        "reviews": "",
+        "images": "",
+        "bookmarks": "",
+        "category": "compilation",
+        "url": "none"
+
+    }, 
+
+    {
+        "title":"A Celebration Of Beatrix Potter",
+        "publisher": "Frederick Warme & Co. (Penguin Books) ",
+        "year": "2016",
+        "author": "Written by Beatrix Potter, Mr. Tod Illustrated by Pat Cummings",
+        "coverImage": "https://jgibbel.github.io/pats-site/images/beatrix-potter-cover.jpg",
+        "description": "",
+        "reviews": "",
+        "images": "",
+        "bookmarks": "",
+        "category": "compilation",
+        "url": "none"
+
+    }, 
+    {
+        "title":"Our Children Can Soar",
+        "publisher": "Bloomsbury USA",
+        "year": "2009",
+        "author": "Written by Michelle Cook, Ella Sang Illustrated by Pat Cummings",
+        "coverImage": "https://jgibbel.github.io/pats-site/images/our-children-cover.jpg",
+        "description": "",
+        "reviews": "",
+        "images": "",
+        "bookmarks": "",
+        "category": "compilation",
+        "url": "none"
+
+    }, 
+
+    {
+        "title":"The Art Of Reading",
+        "publisher": "Reading is Fundamental (Dutton)",
+        "year": "2005",
+        "author": "The Lion, The Witch and the Wardrobe Illustrated by Pat Cummings",
+        "coverImage": "https://jgibbel.github.io/pats-site/images/art-of-reading-cover.jpg",
+        "description": "Forty Illustrators Celebrate RIF’s 40th Anniversary",
+        "reviews": "",
+        "images": "",
+        "bookmarks": "",
+        "category": "compilation",
+        "url": "none"
+
+    }, 
+    {
+        "title":"In My Grandmother's House",
+        "publisher": "HarperCollins",
+        "year": "2003",
+        "author": "Compiled and Illustrated by Bonnie Christensen, The Grannies Written by Pat Cummings",
+        "coverImage": "https://jgibbel.github.io/pats-site/images/grandmothers-house-cover.jpg",
+        "description": "",
+        "reviews": "",
+        "images": "",
+        "bookmarks": "",
+        "category": "compilation",
+        "url": "none"
+
+    }, 
+
+    {
+        "title":"I Have A Dream",
+        "publisher": "Scholastic",
+        "year": "1997",
+        "author": "Dr. Martin Luther King, Jr./Foreword by Coretta Scott King, In Exile In His Own Land Illustrated by Pat Cummings",
+        "coverImage": "https://jgibbel.github.io/pats-site/images/dream-cover.jpg",
+        "description": "",
+        "reviews": "",
+        "images": "",
+        "bookmarks": "",
+        "category": "compilation",
+        "url": "none"
+
+    }, 
+    {
+        "title":"In Praise Of Our Fathers And Our Mothers, A Black Family Treasury",
+        "publisher": "Just Us Books",
+        "year": "1997",
+        "author": "Compiled by Wade Hudson and Cheryl Willis Hudson, Interview with Bweela and Javaka Steptoe by Pat Cummings",
+        "coverImage": "https://jgibbel.github.io/pats-site/images/in-praise-cover.jpg",
+        "description": "",
+        "reviews": "",
+        "images": "",
+        "bookmarks": "",
+        "category": "compilation",
+        "url": "none"
+
+    }, 
+
+    {
+        "title":"Home",
+        "publisher": "Charlotte Zolotow Book/HarperCollins",
+        "year": "1992",
+        "author": "By Michael J. Rosen, Under the Back Porch (Virginia Hamilton poem) illustrated by Pat Cummings",
+        "coverImage": "https://jgibbel.github.io/pats-site/images/home-cover.jpg",
+        "description": "",
+        "reviews": "",
+        "images": "",
+        "bookmarks": "",
+        "category": "compilation",
+        "url": "none"
+
+    }, 
+
+    {
+        "title":"Call Me Alex",
+        "publisher": "Scott Foresman",
+        "year": "2012",
+        "author": "By Pat Cummings, Illustrated by Holli Conger",
+        "coverImage": "https://jgibbel.github.io/pats-site/images/<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>.jpg",
+        "description": "",
+        "reviews": "",
+        "images": "",
+        "bookmarks": "",
+        "category": "educational",
+        "url": "none"
+
+    }, 
+
+    {
+        "title":"My Frisbee",
+        "publisher": "Rigby Literacy",
+        "year": "2000",
+        "author": "By Alison Hawes, Illustrated by Pat Cummings",
+        "coverImage": "https://jgibbel.github.io/pats-site/images/my-frisbee-cover.jpg",
+        "description": "",
+        "reviews": "",
+        "images": "",
+        "bookmarks": "",
+        "category": "educational",
+        "url": "none"
+
+    }, 
+
+    {
+        "title":"Oops!",
+        "publisher": "Celebration Press",
+        "year": "1997",
+        "author": "Written and Illustrated by Pat Cummings",
+        "coverImage": "https://jgibbel.github.io/pats-site/images/<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>.jpg",
+        "description": "",
+        "reviews": "",
+        "images": "",
+        "bookmarks": "",
+        "category": "educational",
+        "url": "none"
+
+    }, 
+
+    {
+        "title":"Barry And Bennie",
+        "publisher": "Celebration Press (ScottForesman/HarperCollins)",
+        "year": "1996",
+        "author": "Written by Angel Shelf Medearis, Illustrated by Pat Cummings",
+        "coverImage": "https://jgibbel.github.io/pats-site/images/barry-benny-cover.jpg",
+        "description": "",
+        "reviews": "",
+        "images": "",
+        "bookmarks": "",
+        "category": "educational",
+        "url": "none"
+
+    }, 
+    {
+        "title":"Pablo Y Pedro",
+        "publisher": "Celebration Press (ScottForesman/HarperCollins)",
+        "year": "1996",
+        "author": "Written by Angel Shelf Medearis, Illustrated by Pat Cummings",
+        "coverImage": "https://jgibbel.github.io/pats-site/images/<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>.jpg",
+        "description": "",
+        "reviews": "",
+        "images": "",
+        "bookmarks": "",
+        "category": "educational",
+        "url": "none"
+
+    }, 
+
+    {
+        "title":"Dear Mabel!",
+        "publisher": "Celebration Press (ScottForesman/HarperCollins)",
+        "year": "1996",
+        "author": "By Pat Cummings",
+        "coverImage": "https://jgibbel.github.io/pats-site/images/dear-mabel-cover.jpg",
+        "description": "¡AMIGA TERESA! Spanish adaptation by Lourdes Davis Machado",
+        "reviews": "",
+        "images": "",
+        "bookmarks": "",
+        "category": "educational",
+        "url": "none"
+
+    }, 
+
+    {
+        "title":"The Lesson",
+        "publisher": "Scholastic",
+        "year": "1994",
+        "author": "By Pat Cummings",
+        "coverImage": "https://jgibbel.github.io/pats-site/images/<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>.jpg",
+        "description": "",
+        "reviews": "",
+        "images": "",
+        "bookmarks": "",
+        "category": "educational",
+        "url": "none"
+
+    }, 
+    {
+        "title":"Shoveling Snow",
+        "publisher": "Scholastic",
+        "year": "1994",
+        "author": "By Pat Cummings",
+        "coverImage": "https://jgibbel.github.io/pats-site/images/shoveling-snow-cover.jpg",
+        "description": "",
+        "reviews": "",
+        "images": "",
+        "bookmarks": "",
+        "category": "educational",
+        "url": "none"
+
     }
 
+
 ]
+
+
+
