@@ -119,8 +119,8 @@ class Books extends React.Component {
             <div  className="Books" class="books-center-div books-wrapper">
               <div onClick={()=>this.handleReturn()} className="books-cover-container cursor">
                       <div>
-                      <img className="books-book-image" src="https://jgibbel.github.io/pats-site/images/00compilations.jpg"></img>
-                      <h4 className="books-title">Return to Selection</h4>
+                      <img className="books-book-image" src="https://jgibbel.github.io/pats-site/images/back.jpg"></img>
+                      <h4 className="books-title">Back</h4>
                       </div>
               </div>
 
@@ -132,6 +132,7 @@ class Books extends React.Component {
                     <div>
                       <img className="books-book-image" src={bookDetail.coverImage} alt={bookDetail.title}></img>
                       <h4 className="books-title">{bookDetail.title}</h4>
+                      {(this.state.filter === "compilation") ? <p className="books-comp-info">{bookDetail.author}{bookDetail.comma} <i>{bookDetail.italic}</i> {bookDetail.postText}</p> : null}
                       </div>
                     </div>
                   : 
@@ -140,6 +141,7 @@ class Books extends React.Component {
                   <Link to={"/" + bookDetail.url}>
                     <img className="books-book-image" src={bookDetail.coverImage} alt={bookDetail.title}></img>
                     <h4 className="books-title">{bookDetail.title}</h4>
+                    {(this.state.filter === "compilation") ? <p className="books-comp-info">{bookDetail.author}{bookDetail.comma} <i>{bookDetail.italic}</i> {bookDetail.postText}</p> : null}
                     </Link>
                   </div>}
                     </>
@@ -152,8 +154,8 @@ class Books extends React.Component {
             
             <div  className="books-center-div">
               <div onClick={()=>this.handleReturnSpecial()} className="horiz-tile cursor">
-                      <img className="square" src="https://jgibbel.github.io/pats-site/images/00compilations.jpg"></img>
-                      <h4 className="h-title">Return to Selection</h4> 
+                      <img className="square" src="https://jgibbel.github.io/pats-site/images/back.jpg"></img>
+                      <h4 className="h-title">Back</h4> 
               </div>
                 
               {(this.state.filter === 'chrono') ?
@@ -164,7 +166,9 @@ class Books extends React.Component {
                     {(bookDetail.url === "none") ? <div className="horiz-tile">
                     
                     <img className="square" src={bookDetail.coverImage} alt={bookDetail.title}></img>
-                    <h4 className="h-title">{bookDetail.title}    ({bookDetail.year})</h4>
+                    <div className="for-comp-info"><h4 className="h-title">{bookDetail.title}    ({bookDetail.year})</h4>
+                    {(bookDetail.category === "compilation") ? <p className="h-info">{bookDetail.author}{bookDetail.comma} <i>{bookDetail.italic}</i> {bookDetail.postText}</p> : null }
+                    </div>
               
                   </div>
                   
@@ -174,10 +178,12 @@ class Books extends React.Component {
                     <div className="horiz-tile cursor">
                     
                       <img className="square" src={bookDetail.coverImage} alt={bookDetail.title}></img>
+                      <div className="for-comp-info">
                       <h4 className="h-title">{bookDetail.title}    ({bookDetail.year})</h4>
-                
+                      {(bookDetail.category === "compilation") ? <p className="h-info">{bookDetail.author}{bookDetail.comma} <i>{bookDetail.italic}</i> {bookDetail.postText}</p> : null }
+                      </div>
                     </div>
-                  </Link> }
+                    </Link> }
                     </>
                     )
                 })} </> : null }
@@ -191,7 +197,7 @@ class Books extends React.Component {
                     
                     <img className="square" src={bookDetail.coverImage} alt={bookDetail.title}></img>
                     <h4 className="h-title">{bookDetail.title}</h4>
-              
+                    {(this.state.filter === "compilation") ? <p>{bookDetail.author}, <i>{bookDetail.italic}</i> {bookDetail.postText}</p> : null}
                   </div>
                   
                   : 
@@ -201,7 +207,7 @@ class Books extends React.Component {
                     
                       <img className="square" src={bookDetail.coverImage} alt={bookDetail.title}></img>
                       <h4 className="h-title">{bookDetail.title}</h4>
-                
+                      {(this.state.filter === "compilation") ? <p>{bookDetail.author}, <i>{bookDetail.italic}</i> {bookDetail.postText}</p> : null}
                     </div>
                   </Link> }
                     </>

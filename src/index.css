@@ -572,6 +572,12 @@ a:active {
 .h-title {
   padding-left: 25px;
   font-size: 20px;
+  margin:5px;
+}
+
+.h-info{
+  padding-left: 25px;
+  margin: 5px;
 }
 
 
@@ -589,6 +595,7 @@ a:active {
         display: flex;
         align-items: center; 
         justify-content: center; 
+        align-self: start;
 }
 
 .cursor:hover {
@@ -602,11 +609,20 @@ a:active {
 }
 
 .books-title {
-  height: 70px;
+  /* height: 70px; */
   width: 200px;
   margin: 10px 0;
   font-size: 20px;
 }
+.books-comp-info {
+  width: 200px;
+}
+.for-comp-info {
+  display: flex;
+  flex-direction: column;
+ 
+}
+
 
 .category-select {
   display: grid;
