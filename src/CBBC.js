@@ -4,7 +4,7 @@ import './index.css';
 function CBBC() {
   return (
     <div className="CBBC" class="cbbc-center-div">
-        <img className="cbbc-img" src="http://patcummings.com/SCBBC-WEBSITE.jpg"></img>
+        <img className="cbbc-img" src="http://www.patcummings.com/images/SCBBC-WEBSITE.jpg"></img>
     </div>
   );
 }

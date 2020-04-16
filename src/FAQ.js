@@ -37,7 +37,7 @@ function FAQ() {
       
         {questions.map((arr, idx) => {return(
           <div className="q">
-            <img className="faq-img" src={`../images/question-${idx+1}.png`}></img>
+            <img className="faq-img" src={`https://www.patcummings.com/images/question-${idx+1}.png`}></img>
         <p>{arr[0]}</p>
         <p>{arr[1]}</p>
           </div>

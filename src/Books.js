@@ -78,37 +78,37 @@ class Books extends React.Component {
             <div className="books-center-div category-select">
             <div onClick={()=>this.handleSelect('picture')} className="books-cover-container cursor">
                       <div>
-                      <img className="books-book-image" src="https://jgibbel.github.io/pats-site/images/00picBook.jpg" alt="Picture Books"></img>
+                      <img className="books-book-image" src="https://www.patcummings.com/images/00picBook.jpg" alt="Picture Books"></img>
                       <h4 className="books-title">Picture Books</h4>
                       </div>
             </div>
             <div onClick={()=>this.handleSelect('middle')} className="books-cover-container cursor">
                       <div>
-                      <img className="books-book-image" src="https://jgibbel.github.io/pats-site/images/00middleGrade.jpg" alt="Picture Books"></img>
+                      <img className="books-book-image" src="https://www.patcummings.com/images/00middleGrade.jpg" alt="Picture Books"></img>
                       <h4 className="books-title">Middle Grade</h4>
                       </div>
             </div>
             <div onClick={()=>this.handleSelect('compilation')} className="books-cover-container cursor">
                       <div>
-                      <img className="books-book-image" src="https://jgibbel.github.io/pats-site/images/00compilations.jpg" alt="Picture Books"></img>
+                      <img className="books-book-image" src="https://www.patcummings.com/images/00compilations.jpg" alt="Picture Books"></img>
                       <h4 className="books-title">Compilations</h4>
                       </div>
             </div>
             <div onClick={()=>this.handleSelect('board')} className="books-cover-container cursor">
                       <div>
-                      <img className="books-book-image" src="https://jgibbel.github.io/pats-site/images/00boardBook.jpg" alt="Picture Books"></img>
+                      <img className="books-book-image" src="https://www.patcummings.com/images/00boardBook.jpg" alt="Picture Books"></img>
                       <h4 className="books-title">Board Books</h4>
                       </div>
             </div>
             <div onClick={()=>this.handleSelect('nonfiction')} className="books-cover-container cursor">
                       <div>
-                      <img className="books-book-image" src="https://jgibbel.github.io/pats-site/images/00nonFic.jpg" alt="Picture Books"></img>
+                      <img className="books-book-image" src="https://www.patcummings.com/images/00nonFic.jpg" alt="Picture Books"></img>
                       <h4 className="books-title">Nonfiction</h4>
                       </div>
             </div>
             <div onClick={()=>this.handleSelect('educational')} className="books-cover-container cursor">
                       <div>
-                      <img className="books-book-image" src="https://jgibbel.github.io/pats-site/images/00educational.jpg" alt="Picture Books"></img>
+                      <img className="books-book-image" src="https://www.patcummings.com/images/00educational.jpg" alt="Picture Books"></img>
                       <h4 className="books-title">Educational</h4>
                       </div>
             </div>   
@@ -119,7 +119,7 @@ class Books extends React.Component {
             <div  className="Books" class="books-center-div books-wrapper">
               <div onClick={()=>this.handleReturn()} className="books-cover-container cursor">
                       <div>
-                      <img className="books-book-image" src="https://jgibbel.github.io/pats-site/images/back.jpg"></img>
+                      <img className="books-book-image" src="https://www.patcummings.com/images/back.jpg"></img>
                       <h4 className="books-title">Back</h4>
                       </div>
               </div>
@@ -154,7 +154,7 @@ class Books extends React.Component {
             
             <div  className="books-center-div">
               <div onClick={()=>this.handleReturnSpecial()} className="horiz-tile cursor">
-                      <img className="square" src="https://jgibbel.github.io/pats-site/images/back.jpg"></img>
+                      <img className="square" src="https://www.patcummings.com/images/back.jpg"></img>
                       <h4 className="h-title">Back</h4> 
               </div>
                 

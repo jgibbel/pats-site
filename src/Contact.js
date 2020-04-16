@@ -10,7 +10,7 @@ function Contact() {
             <br /><br />
             <p><b>Marietta B. Zacker</b></p>
             <p>gallt & zacker Literary Agency</p>
-            <p><a href="marietta@galltzacker.com">marietta@galltzacker.com</a></p>
+            <p><a href="mailto:marietta@galltzacker.com">marietta@galltzacker.com</a></p>
         </div>
   );
 }
