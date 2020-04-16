@@ -616,6 +616,7 @@ a:active {
 }
 .books-comp-info {
   width: 200px;
+  font-size: 14px;
 }
 .for-comp-info {
   display: flex;
